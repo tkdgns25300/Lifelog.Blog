@@ -1,0 +1,519 @@
+/* ==================== GOOGLE FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=La+Belle+Aurore&display=swap');
+
+/* ==================== BASE ==================== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ==================== COMMON ==================== */
+.section__title {
+    position: relative;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 4.2rem;
+    margin-bottom: 2.3rem;
+    z-index: 5;
+}
+
+.section__subtitle {
+    position: relative;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.3rem;
+    z-index: 5;
+}
+
+/* ==================== NAV ==================== */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav__logo {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav__list {
+    position: relative;
+}
+
+.nav__item {
+    position: relative;
+    margin-right: 3.5rem;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    z-index: 1;
+}
+
+.nav__list:after {
+    position: absolute;
+    top: 18px;
+    content: '';
+    display: block;
+    width: calc(32% - 3.5rem);
+    background: greenyellow;
+    height: 4px;
+}
+
+.nav__btn {
+    font-size: 2rem;
+    color: white;
+}
+
+/* ==================== HOME ==================== */
+.home {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1
+}
+
+.home__video {
+    object-fit: cover;
+}
+
+.home__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 15rem;
+    color: white;
+}
+
+.home__arrow {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    width: 100%;
+    background-color: white;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.header__btn {
+    display: block;
+    margin: auto;
+    width: 13rem;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 2rem;
+    background: #1c24f1;
+    border-radius: 4rem;
+    margin-bottom: 10rem;
+}
+
+.header__btn:hover {
+    cursor: pointer;
+}
+
+.header__container {
+    display: block;
+    width: 84%;
+    z-index: 0;
+}
+
+/* HEADER SWIPER BULLET CUSTOM */
+.header__container .swiper-pagination-bullet-active {
+    background-color: black;
+}
+
+.header__container .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px !important;
+}
+
+.header__container .swiper-pagination {
+    width: 12rem !important;
+    position: absolute;
+    top: 33rem;
+}
+
+/* ==================== EPISODE 1 ==================== */
+.main__ep {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.ep-1 {
+    background-color: #1c24f1;
+}
+
+.ep__num {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    color: #ffeb08;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    z-index: 5;
+}
+
+.main__ep .section__title,
+.main__ep .section__subtitle {
+    color: white;
+}
+
+.main__ep .section__title {
+    margin-bottom: 1.5rem;
+}
+
+.main__ep .section__subtitle {
+    margin-bottom: 8rem;
+}
+
+.ep__bg-title {
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20rem;
+    z-index: 1;
+}
+
+.ep-1__bg-title {
+    color: #0e15d8;
+}
+
+.ep__video {
+    position: relative;
+    width: 84%;
+    margin: auto;
+}
+
+.ep__video:hover {
+    cursor: pointer;
+}
+
+.play-btn1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -52%);
+    font-size: 6rem;
+    color: white;
+    border-radius: 100%;
+}
+
+/* play button 1개만 하니 :hover 시 가장자리부분도 파래져서 button 2개 사용(큰 버튼으로 가장자리 가림!) */
+.play-btn2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -52%);
+    font-size: 7rem;
+    color: white;
+    border-radius: 100%;
+}
+
+.ep__video:hover > .play-btn1 {
+    background-color: #1c24f1;
+}
+
+/* ==================== EPISODE 2 ==================== */
+.ep-2 {
+    background-color: #8510ff;
+}
+
+.ep-2__bg-title {
+    color: #6f00e6;
+}
+
+/* ==================== EPISODE 3 ==================== */
+.ep-3 {
+    background-color: #00cfcb;;
+}
+
+.ep-3__bg-title {
+    color: #00b3b0;
+}
+
+/* ==================== EPISODE 4 ==================== */
+.ep-4 {
+    background-color: #ff00b5;
+}
+
+.ep-4__bg-title {
+    color: #e000a1;
+}
+
+/* ==================== Blogger Handwriting Logo ==================== */
+.blogger-logo {
+    background-color: #ebebeb;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.logo-handwriting {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.handlogo {
+    width: 24rem;
+    height: auto;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+}
+
+.handlogo:hover {
+    cursor: pointer;
+}
+
+/* ==================== WAYS TO ENJOY BLOG ==================== */
+.enjoy-blog {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: white;
+}
+
+.enjoy-blog__container {
+    width: 84%;
+    margin: auto;
+}
+
+/* ENJOY BLOG SWIPER BULLET CUSTOM */
+.enjoy-blog__container .swiper-pagination-bullet-active {
+    background-color: black;
+}
+
+.enjoy-blog__container .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px !important;
+}
+
+.enjoy-blog__container .swiper-pagination {
+    width: 12rem !important;
+    position: absolute;
+    top: 25rem;
+}
+
+/* ==================== Blogger And Contents ==================== */
+.BloggerAndContents {
+    padding-bottom: 6rem;
+    background-color: white;
+}
+
+.BloggerAndContents__container {
+    width: 84%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.contents-item {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contents-item:hover {
+    cursor: pointer;
+}
+
+.BloggerAndContents__btn {
+    display: block;
+    margin: 4rem auto;
+    width: 13rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 4rem;
+}
+
+.BloggerAndContents__btn:hover {
+    cursor: pointer;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 78vh;
+    z-index: -2;
+}
+
+.footer__data {
+    width: 100%;
+    height: 63vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/footer.jpeg');
+}
+
+.footer__title {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding-top: 12.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.footer__subtitle {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 1.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer__btns {
+    position: relative;
+    left: -1rem;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.footer__btn {
+    position: relative;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer__btn:hover {
+    cursor: pointer;
+}
+
+.apple-icon {
+    font-size: 2.5rem;
+}
+
+.googleplay-icon {
+    position: relative;
+    top: 0.5rem;
+    left: -0.2rem;
+    width: 3rem;
+    height: auto;
+}
+
+.footer__metadata {
+    background-color: white;
+    width: 100%;
+    height: 15.1vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3rem;
+}
+
+.footer__InquiryAndCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer__inquiry {
+    font-size: 0.9rem;
+    color: rgba(20, 20, 20, 1);
+}
+
+.footer__inquiry-btn:hover {
+    cursor: pointer;
+}
+
+.footer__copy {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.footer__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+}
+
+.footer__icon:hover {
+    cursor: pointer;
+}
+
+/* ==================== PLUS ==================== */
+.plus {
+    display: none;
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+}
+
+.plus-icon {
+    font-size: 2rem;
+    background: black;
+    color: white;
+    padding: 0 .6rem .3rem .6rem;
+    border-radius: 100%;
+}
+
+.plus-icon:hover {
+    cursor: pointer;
+}
